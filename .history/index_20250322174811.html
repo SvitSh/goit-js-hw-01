@@ -24,20 +24,14 @@
     <script src="js/task-3.js"></script>
 
     <script>
-      // Вызов функции для первой задачи и вывод в элемент
+      // Вызов функции для первой задачи
       document.getElementById('result1').innerText = makeTransaction(5, 3000);
-      document.getElementById('result1').innerText += '\n' + makeTransaction(3, 1000);
-      document.getElementById('result1').innerText += '\n' + makeTransaction(10, 500);
 
-      // Вызов функции для второй задачи и вывод в элемент
+      // Вызов функции для второй задачи
       document.getElementById('result2').innerText = getShippingMessage("Australia", 120, 50);
-      document.getElementById('result2').innerText += '\n' + getShippingMessage("Germany", 80, 20);
-      document.getElementById('result2').innerText += '\n' + getShippingMessage("Sweden", 100, 20);
 
-      // Вызов функции для третьей задачи и вывод в элемент
+      // Вызов функции для третьей задачи
       document.getElementById('result3').innerText = getElementWidth("50px", "8px", "4px");
-      document.getElementById('result3').innerText += '\n' + getElementWidth("60px", "12px", "8.5px");
-      document.getElementById('result3').innerText += '\n' + getElementWidth("200px", "0px", "0px");
     </script>
   </body>
 </html>
