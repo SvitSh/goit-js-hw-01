@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Tasks</title>
+  </head>
+  <body>
+    <h1>Check Droid Order Transaction (Task 1)</h1>
+    <p id="result1"></p>
+    <!-- Результат для Task 1 -->
+
+    <h1>Check Shipping Message (Task 2)</h1>
+    <p id="result2"></p>
+    <!-- Результат для Task 2 -->
+
+    <h1>Check Element Width (Task 3)</h1>
+    <p id="result3"></p>
+    <!-- Результат для Task 3 -->
+
+    <!-- Подключение файлов с задачами -->
+    <script src="js/task-1.js"></script>
+    <script src="js/task-2.js"></script>
+    <script src="js/task-3.js"></script>
+
+    <script>
+      // Вызов функции для первой задачи и вывод в элемент
+      document.getElementById('result1').innerText = makeTransaction(5, 3000);
+      document.getElementById('result1').innerText += '\n' + makeTransaction(3, 1000);
+      document.getElementById('result1').innerText += '\n' + makeTransaction(10, 500);
+
+      // Вызов функции для второй задачи и вывод в элемент
+      document.getElementById('result2').innerText = getShippingMessage("Australia", 120, 50);
+      document.getElementById('result2').innerText += '\n' + getShippingMessage("Germany", 80, 20);
+      document.getElementById('result2').innerText += '\n' + getShippingMessage("Sweden", 100, 20);
+
+      // Вызов функции для третьей задачи и вывод в элемент
+      document.getElementById('result3').innerText = getElementWidth("50px", "8px", "4px");
+      document.getElementById('result3').innerText += '\n' + getElementWidth("60px", "12px", "8.5px");
+      document.getElementById('result3').innerText += '\n' + getElementWidth("200px", "0px", "0px");
+    </script>
+  </body>
+</html>
